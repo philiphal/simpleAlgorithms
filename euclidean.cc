@@ -6,6 +6,10 @@
 // r = a-qn
 // q = floor(a/n)
 
+
+// Uses C++ std::vector for the Euclidean algorithm: 
+// finds the greatest common factor
+
 int main(int argc,char**argv)
 {
 
