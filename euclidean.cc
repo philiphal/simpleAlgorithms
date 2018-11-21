@@ -37,31 +37,30 @@ std::cin>>gcf_2;
 gcfA=gcf_1;
 gcfB=gcf_2;
 
-
-while(i<5)
-{
-a.push_back(gcf_1);
-n.push_back(gcf_2);
-q.push_back(a.at(i)/n.at(i));
-r.push_back(a.at(i) - (int(q.at(i))*n.at(i)));
-
-
-
-
-std::cout<<"\n\t"<<a.at(i)<<" = ("<<q.at(i)<<") ("<<n.at(i)<<") + "<<r.at(i);	
-
-i++;
-
-gcf_1=n.at(i-1);
-gcf_2=r.at(i-1);
-
-	if(r.at(r.size()-1) == 0)
-		{
-
-			break;
-		}
-
-}
+	
+	while(i<5)
+	{
+		
+		a.push_back(gcf_1);
+		n.push_back(gcf_2);
+		q.push_back(a.at(i)/n.at(i));
+		r.push_back(a.at(i) - (int(q.at(i))*n.at(i)));
+		
+	
+		std::cout<<"\n\t"<<a.at(i)<<" = ("<<q.at(i)<<") ("<<n.at(i)<<") + "<<r.at(i);	
+		
+		i++;
+		
+		gcf_1=n.at(i-1);
+		gcf_2=r.at(i-1);
+		
+			if(r.at(r.size()-1) == 0)
+				{
+		
+					break;
+				}
+	
+	}
 
 std::cout<<"\n\n\t gcf("<<gcfA<<","<<gcfB<<") = "<<r.at(r.size()-2);
 std::cout<<"\n\n";
